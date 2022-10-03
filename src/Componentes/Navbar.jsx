@@ -177,19 +177,19 @@ function Navbar() {
         </button>
         <ul class={`nav-menu ${active ? "active" : ""}`}>
           <li>
-            <a href="#">Home</a>
+            <a href="http://localhost:3000/">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="http://localhost:3000/">About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="http://localhost:3000/">Contact</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="http://localhost:3000/">Blog</a>
           </li>
           <li>
-            <a href="#">Careers</a>
+            <a href="http://localhost:3000/">Careers</a>
           </li>
         </ul>
         <button class="cta-btn" href="#">
