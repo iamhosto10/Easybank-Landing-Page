@@ -161,21 +161,21 @@ function Navbar() {
   const [active, setActive] = useState(false);
   return (
     <Head>
-      <nav class="navbar slide-in-top">
-        <div class="logo">
+      <nav className="navbar slide-in-top">
+        <div className="logo">
           <img src={Logo} alt="Easybank's company logo" />
         </div>
         <button
-          class={`navbar-toggle-btn ${active ? "active" : ""}`}
+          className={`navbar-toggle-btn ${active ? "active" : ""}`}
           onClick={() => {
             setActive(!active);
           }}
         >
-          <span class="one"></span>
-          <span class="two"></span>
-          <span class="three"></span>
+          <span className="one"></span>
+          <span className="two"></span>
+          <span className="three"></span>
         </button>
-        <ul class={`nav-menu ${active ? "active" : ""}`}>
+        <ul className={`nav-menu ${active ? "active" : ""}`}>
           <li>
             <a href="http://localhost:3000/">Home</a>
           </li>
@@ -192,7 +192,7 @@ function Navbar() {
             <a href="http://localhost:3000/">Careers</a>
           </li>
         </ul>
-        <button class="cta-btn" href="#">
+        <button className="cta-btn" href="#">
           Request Invite
         </button>
       </nav>

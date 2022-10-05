@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Artic = styled.article`
-  min-width: 15%;
-  max-width: 20%;
+  /* min-width: 15%;
+  max-width: 20%; */
   margin: 1.5rem;
   background-color: white;
   border-radius: 10px;
@@ -48,15 +48,16 @@ function Article({ img, autor, texto, titulo }) {
   return (
     <>
       <Artic>
-        <a href="http://localhost:3000/" />
-        <div className="Contenedor-Imagenes">
-          <img src={img} alt={titulo} />
-        </div>
-        <div className="Contenido-Articulo">
-          <p className="Autor">{autor}</p>
-          <h3 className="Titulo">{titulo}</h3>
-          <p className="Texto">{texto}</p>
-        </div>
+        <a href="http://localhost:3000/">
+          <div className="Contenedor-Imagenes">
+            <img src={img} alt={titulo} />
+          </div>
+          <div className="Contenido-Articulo">
+            <p className="Autor">{autor}</p>
+            <h3 className="Titulo">{titulo}</h3>
+            <p className="Texto">{texto}</p>
+          </div>
+        </a>
       </Artic>
     </>
   );

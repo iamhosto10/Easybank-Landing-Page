@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import "./App.css";
+import Footer from "./Componentes/Footer";
 import LatestArticle from "./Componentes/LatestArticle";
 import Navbar from "./Componentes/Navbar";
 import Portada from "./Componentes/Portada";
@@ -10,14 +11,15 @@ const Main = styled.main`
 `;
 function App() {
   return (
-    <body>
+    <>
       <Navbar />
       <Main>
         <Portada />
         <Whysection />
         <LatestArticle />
       </Main>
-    </body>
+      <Footer />
+    </>
   );
 }
 

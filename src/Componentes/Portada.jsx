@@ -131,21 +131,21 @@ function Portada() {
   return (
     <>
       <Port>
-        <div class="hero-img-container slide-in-right">
+        <div className="hero-img-container slide-in-right">
           <img
-            class="hero-img"
+            className="hero-img"
             src={mockup}
             alt="Illustration of several cellphones"
           />
         </div>
-        <div class="hero-container slide-in-left">
-          <h1 class="hero-heading">Next generation digital banking</h1>
-          <p class="hero-text">
+        <div className="hero-container slide-in-left">
+          <h1 className="hero-heading">Next generation digital banking</h1>
+          <p className="hero-text">
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </p>
-          <button class="cta-btn" href="http://localhost:3000/">
+          <button className="cta-btn" href="http://localhost:3000/">
             Request Invite
           </button>
         </div>

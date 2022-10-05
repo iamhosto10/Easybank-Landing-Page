@@ -47,7 +47,25 @@ const Why = styled.section`
   /* ************************ */
   /* MEDIA QUERIES */
   /* ************************ */
-
+  /* OVER 750PX */
+  /* ************************ */
+  @media (min-width: 750px) {
+    padding: 3.75rem 7rem;
+    h2 {
+      padding: 0;
+      font-size: 2.5rem;
+      text-align: left;
+    }
+    p {
+      padding: 0;
+      max-width: 40.63rem;
+      text-align: left;
+    }
+    .Cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
   /* ************************ */
   /* OVER 1100PX */
   /* ************************ */
