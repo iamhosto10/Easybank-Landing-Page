@@ -10,9 +10,9 @@ jobs:
       - name: Checkout Source
         uses: actions/checkout@v4
       - name: Login to docker hub
-        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+        run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
       - name: Build Docker Image
-        run: docker build -t iamhosto1000/easybank.
+        run: docker build -t iamhosto1000/easybank:latest.
       - name: Publish Image to docker hub
         run: docker push iamhosto1000/easybank:latest
   deploy:
@@ -22,6 +22,6 @@ jobs:
       - name: Pull image from docker hub
         run: docker pull iamhosto1000/easybank:latest
       - name: Delete old container
-        run: docker rm -f easybank-container
+        run: docker rm -f easybank-container || true
       - name: Run Docker Container
-        run: docker run -d -p 3000:80 --name easybank-container iamhosto1000/easybank
+        run: docker run -d -p 3000:80 --name easybank-container iamhosto1000/easybank:latest
