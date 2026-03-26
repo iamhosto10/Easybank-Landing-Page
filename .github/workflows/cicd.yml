@@ -24,4 +24,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f easybank-container || true
       - name: Run Docker Container
-        run: docker run -d -p 3000:80 --name easybank-container iamhosto1000/easybank:latest
+        run: docker run -d -p 80:80 --name easybank-container iamhosto1000/easybank:latest
